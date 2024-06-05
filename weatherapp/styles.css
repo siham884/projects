@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: background 2s; /* Smooth transition for background color change */
+    width: 100%;
+    height: 90%;
+}
+
+button#getWeatherButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#getWeatherButton:hover {
+    background-color: #0056b3;
+}
+
+#topDisplay {
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    margin: 5px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+}
+
+#weatherDisplay {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Define keyframes for gradient animations */
+@keyframes clearSky {
+    0% { background: #ffcc00; }
+    50% { background: #ff9900; }
+    100% { background: #ffcc00; }
+}
+
+@keyframes cloudy {
+    0% { background: #99ccff; }
+    50% { background: #6699ff; }
+    100% { background: #99ccff; }
+}
+
+@keyframes rainy {
+    0% { background: #3366ff; }
+    50% { background: #0033cc; }
+    100% { background: #3366ff; }
+}
+
+/* Add animation class to container */
+.clear-sky {
+    animation: clearSky 5s infinite;
+}
+
+.cloudy {
+    animation: cloudy 5s infinite;
+}
+
+.rainy {
+    animation: rainy 5s infinite;
+}
