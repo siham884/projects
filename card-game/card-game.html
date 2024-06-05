@@ -1,0 +1,39 @@
+
+!
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Memory Card Game</title>
+   
+</head>
+<body>
+    <div class="controls">
+        <div class="score">Moves: 0</div>
+        <div class="timer">Time: 0s</div>
+        <div class="high-score">High Score: N/A</div>
+        
+    </div>
+
+    <div class="theme-selector">
+      <label for="theme">Choose Theme: </label>
+      <select id="theme">
+          <option value="fruits">Fruits</option>
+          <option value="animals">Animals</option>
+          <option value="emojis">Emojis</option>
+      </select>
+      <button onclick="restartGame()">Start Game</button>
+  </div>
+    <div class="turn-indicator">Your Turn</div>
+    <div class="container" id="game-container">
+        <!-- Memory cards will be generated here -->
+    </div>
+
+
+    <script src="script.js"> </script>
+</body>
+</html>
