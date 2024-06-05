@@ -1,0 +1,764 @@
+
+section {
+    position: relative;
+    height: auto;
+  
+    
+    align-items: center;
+   
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    position: relative; /* Ensure the sections are positioned relative to the body */
+    min-height: 90vh; /* Adjust height as needed */
+    padding-top: 20px; /* Ensure content starts below the fixed navbar */
+    /* Other styles */
+
+
+}
+
+
+
+
+.project-container,
+.contact-container {
+    /* Your existing styles */
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+
+.project-container.visible,
+.contact-container.visible {
+    opacity: 1;
+    /* Add your animation properties here */
+}
+
+
+ 
+
+
+.about {
+   
+    position: relative; /* Ensure relative positioning for absolute elements */
+    overflow: hidden; /* Ensure the overlay covers the entire background */
+}
+
+
+
+
+
+
+
+
+
+.navbar-expand-lg .navbar-collapse {
+display: flex!important;
+flex-basis: auto;
+margin: 0% 59%;
+}
+  
+.home-section{
+  background: #436FC6;
+    font-family: raleway regular;
+  }
+  
+
+  .navbar-nav{
+    margin-left: 50px;
+    margin-top: 6px;
+  }
+
+  
+  .nav-item .nav-link{
+    margin-left: 10px;
+    font-weight: bold;
+    
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: 0.5s ease;
+    font-family: "Noto Traditional Nushu";
+  
+    
+  
+  }
+
+
+  
+  .nav-item::after{
+    content:'';
+    display: block;
+    position: relative;
+    width: 48%;
+    border: 2px solid #fff9f9;
+    margin: 0px auto;
+  }
+  
+
+
+
+  #contact-btn{
+  padding: 10px 10px;
+  background-color:transparent ;
+  color: #000000;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0% 36%;
+  font-weight: bold;
+   
+  }
+
+  .contact-btn::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 25%;
+    border: 1px solid #007bff;
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    
+}
+
+  #contact-btn:hover{
+    background-color: #99B2E4;
+  color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.visible {
+    opacity: 1;
+    /* Add your animation properties here */
+}
+
+
+
+
+
+.home{
+  width: 95%;
+  height: 0.0vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+ 
+  position: absolute;
+  top:auto;
+  left: 24.5px;
+  
+}
+
+.home .img{
+  flex: 1 1 400px;
+}
+.home .img img{
+ max-width: 200px;
+ margin-left: 38%;
+ padding: 14px;
+ }
+
+
+.about-container{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+
+.img-svg {
+  background-image: url('undraw_programmer_re_owql.svg');
+      background-size: cover; /* Adjust as needed */
+      width: 72vh;
+      height: 62vh;
+     
+ 
+
+
+}
+
+
+.content {
+  margin: auto;
+  text-align: center;
+  color: #141313;
+  height: 250vh;
+  align-items: center;
+  overflow-wrap: break-word;
+  opacity: 0;
+  transition: opacity 1s;
+  
+    font-size: 3vh;
+    transition: opacity 1s;
+    animation-timeline: view();
+    animation-range: 50vh 0vh;
+}
+
+
+
+
+.visible {
+    opacity: 1;
+    /* Add your animation properties here */
+}
+
+
+
+.home .content h1{
+  color: rgb(2, 2, 2);
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 20px;
+    
+ 
+}
+
+.home .content h1 {
+  color: rgb(12, 13, 14);
+  letter-spacing: 3px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding: 2%;
+  font-family: "Noto Traditional Nushu";
+
+
+
+}
+
+
+
+
+ 
+
+.home .content h1{
+  margin-left: -43%;
+
+}
+
+
+
+
+
+
+.home .content p{
+  color: #6890DE;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-justify: inter-word;
+  margin-left: 40px;
+  padding: 20px;
+     text-align: center;
+      font-size: 5vh;
+      overflow-wrap: break-word;
+      text-align: justify; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    font-family:'noto-sans-imperial-aramaic-regular';
+}
+
+.hr {
+  color: #6890DE;
+
+
+}
+
+
+
+
+
+#About {
+margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+.contact-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #424769;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #606f8e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio {
+
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  font-family: "Noto Traditional Nushu";
+}
+.project-header{
+  font-size: 5vh;
+  text-align: center;
+  padding: 20px;
+}
+.project-header::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 25%;
+    border: 1px solid #007bff;
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  aspect-ratio: 0;
+  max-height: calc(80vh - (2 * 2px));
+  overflow: auto;
+  scroll-snap-type: var(--scroll-snap-type);
+  border: solid 1px black;
+}
+
+.project-container::-webkit-scrollbar {
+  height: 6px;
+  width: 5px;
+}
+.project-container::-webkit-scrollbar-thumb {
+  background: #436FC6;
+}
+.project-container::-webkit-scrollbar-track {
+  background: #99B2E4;
+}
+.project-container::-webkit-scrollbar-track-piece:start {
+  background: #436FC6;
+}
+
+.container-card {
+  background-color: #007bff;
+  margin: 3em 33em; /* Adjust the margin as needed */
+}
+
+.background {
+  background-color: rgb(255, 255, 255);
+  height: 250px;
+  width: 350px;
+  background-color: #99B2E4;
+  height: 416px;
+  width: 389px;
+
+  background-size: 11.7px 12.7px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: rgb(255, 255, 255);
+  height: 110%;
+  width: 379px;
+  margin: -42px;
+  border: solid 2px;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-9px); /* Move the card up on hover */
+  box-shadow: 0 0 50px rgb(0, 0, 0,  0.3); /* Add a box shadow on hover */
+  transition: box-shadow .3s;
+}
+
+.card-img-thumbnail {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 20px 25%;
+}
+
+.project-details {
+  flex-grow: 1;
+}
+
+.project-title {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Noto Traditional Nushu";
+}
+
+.project-description {
+  color: #0a0909;
+  margin-bottom: 10px;
+  font-size: 12.9px;
+  font-family: "Noto Traditional Nushu", sans-serif;
+  margin: auto 53px;
+}
+
+
+.project-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 10px;
+  transition: 0.4s;
+  color: black;
+  margin: 0px 90px;
+  padding: 4px 12px;
+  display: inline-block;
+  
+}
+
+
+.project-link:hover {
+  color: white;
+  background-color: #99B2E4;
+
+}
+
+.project-link::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 25%;
+    border: 1px solid #007bff;
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    
+}
+
+.project-link:hover::after {
+    opacity: 0;
+}
+
+.project-link:hover::before {
+    opacity: 1;
+}
+
+
+
+.contact-section {
+  text-align: center;
+  align-items: center;
+  justify-items: end;
+
+
+}
+#contact{
+  background-color: #436FC6;
+  height: 10px;
+}
+#contact h2  {
+  text-align: center;
+  color: #000000;
+  padding: 20px;
+  font-family: "Noto Traditional Nushu", sans-serif;
+
+  
+}
+#contact p  {
+  text-align: center;
+  color: #000000;
+  font-family:'noto-sans-imperial-aramaic-regular';
+  
+
+  
+}
+.contact-container{
+  background-color: white;
+  margin: 96px;
+  padding-bottom: 78px;
+  height: 91%;
+
+}
+
+
+.contact-form{
+  width: 50%;
+  margin: 0% 25%;
+}
+.contact-container.visible {
+  background-color: white;
+  margin: 96px;
+  padding-bottom: 78px;
+  height: 91%;
+}
+.contact-form input,
+.contact-form textarea {
+  display: block; /* Change display to block */
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.contact-form button {
+  padding: 10px 10px;
+  background-color:transparent ;
+  color: #000000;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0% 36%;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #99B2E4;
+  color: #fff;
+}
+
+.contact-form button::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 25%;
+    border: 1px solid #007bff;
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    
+}
+
+
+.contact-form button:hover::after {
+    opacity: 0;
+}
+
+.contact-form button:hover::before {
+    opacity: 1;
+}
+
+#messageStatus {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex; /* Use flexbox to arrange icons in a row */
+  justify-content: center; /* Center-align icons horizontally */
+}
+
+.social-icon {
+  color: rgb(104, 104, 104); /* Change icon color to white */
+  font-size: 44px; /* Make icons bigger */
+  margin: 0 10px; /* Add some margin between icons */
+}
+
+.social-icon:hover {
+  color: #6890DE;
+}
+
+
+
+
+
+
+
+
+.footer{
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4671c9;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.NavLink {
+  display: inline-block;
+  color: #fff; /* White text color */
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+   /* Background color */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.NavLink:hover {
+   /* Background color on hover */
+  color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-buttons button {
+  color: #fff;
+  background-color: #424769; /* Default background color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.nav-buttons button:hover {
+  background-color: #606f8e  #6c768a; /* Background color on hover */
+}
+
+.nav-buttons button.active {
+  background-color: #606f8e ; /* Active button background color */
+  color: wheat;
+}
+
+
+
+
+@media (max-width: 568px) {
+      /* Change text color for small screens */
+      .home .content p {
+        color: #007bff; /* Change to your desired color */
+        font-style: normal;
+        font-size: 4.5vh;
+        width: 100%;
+      }
+
+       
+      .about-container{
+      flex-direction: column;
+    }
+
+    }
+   
+
+
+    @media (max-width: 568px) {
+      /* Change text color for small screens */
+      .contact-container {
+       height: 700%;
+      }
+    }
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Media query for screens between 600px and 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+
+
+}
+
+/* Media query for screens larger than 900px */
+@media screen and (min-width: 901px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .text, .img-svg {
+    width: 100%; /* Make both text and image take full width */
+  }
+
+  .content {
+    font-size: 2.5vh; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media query for full-sized screens */
+@media screen and (min-width: 768px) {
+  .text {
+    order: 1; /* Move text to the left */
+  }
+
+  .img-svg {
+    order: 2; /* Move image to the right */
+    width: 72vh; /* Adjust width as needed */
+    height: 62vh; /* Adjust height as needed */
+    margin-left: auto; /* Push the image to the right */
+  }
+
+  .container {
+    height: auto; /* Reset container height */
+  }
+
+  .content {
+    width: 40%; /* Adjust width of the content */
+    margin-left: 5%; /* Add some space between content and image */
+    height: auto; /* Reset height */
+  }
+}
